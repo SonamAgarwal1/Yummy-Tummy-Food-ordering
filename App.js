@@ -11,9 +11,12 @@ const Jsxheading = () => (
 
 //Component compositioning- using one component within another
 const HeadingComponent = () => {
+  //Line 17, 18 and 19 is the same way of calling component inside another component
   return (
     <div className="heading">
       <Jsxheading />
+      <Jsxheading></Jsxheading>
+      {Jsxheading()}
       <h1>Namaste react functional component</h1>
     </div>
   );
