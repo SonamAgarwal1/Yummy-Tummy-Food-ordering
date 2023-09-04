@@ -1,3 +1,44 @@
-#heading {
-  color: blue;
+.res-logo {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.img-logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+}
+
+.nav-bar > ul {
+  display: flex;
+}
+
+.nav-bar > ul > li {
+  margin: 10px;
+  list-style-type: none;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+}
+
+.res-card {
+  width: 200px;
+  height: 280px;
+  background-color: #f0f0f0;
+  margin: 5px;
+  padding: 5px;
+}
+
+.res-card:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.food-img {
+  width: 100%;
 }
