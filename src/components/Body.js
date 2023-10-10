@@ -2,7 +2,6 @@ import ResturantCard from "./ResturantCard";
 import { resList } from "../utils/mockData";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
-import TableToCSV from "./TableToCSV";
 
 const Body = () => {
   const [listofResturants, setListOfResturants] = useState([]);
