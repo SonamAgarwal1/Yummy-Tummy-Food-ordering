@@ -22,20 +22,22 @@ const ResturantMenu = () => {
   if (resInfo === null) return <Shimmer />;
 
   const { itemCards } =
-    resInfo.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card;
+    resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
+      ?.card;
+  const { name, cuisines, costForTwoMessage } =
+    resInfo?.data?.cards[0]?.card?.card?.info;
 
   return (
     <div className="menu">
-      <h1>{resInfo?.data?.cards[0]?.card?.card?.info?.name}</h1>
+      <h1>{name}</h1>
       <p>
-        {resInfo?.data?.cards[0]?.card?.card?.info?.cuisines?.join(", ")}-
-        {resInfo?.data?.cards[0]?.card?.card?.info?.costForTwoMessage}
+        {cuisines?.join(", ")}-{costForTwoMessage}
       </p>
       <h2>Menu</h2>
       <ul>
         {itemCards?.map((res) => (
-          <li key={res.card.info.id}>
-            {res.card.info.name}- Rs. {res.card.info.price / 100}
+          <li key={res?.card?.info?.id}>
+            {res?.card?.info?.name}- Rs. {res?.card?.info?.price / 100}
           </li>
         ))}
       </ul>
