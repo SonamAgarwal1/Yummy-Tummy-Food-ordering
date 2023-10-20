@@ -70,6 +70,7 @@ const Body = () => {
           <Link
             to={"/resturants/" + resturant?.info?.id}
             key={resturant?.info?.id}
+            className="link-tag"
           >
             <ResturantCard resObj={resturant} />
           </Link>
