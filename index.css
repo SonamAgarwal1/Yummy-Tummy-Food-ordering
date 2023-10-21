@@ -28,7 +28,7 @@
 
 .res-card {
   width: 220px;
-  height: 375px;
+  height: 400px;
   background-color: #f0f0f0;
   margin: 5px;
   padding: 5px;
@@ -68,4 +68,10 @@
 
 .search {
   margin-top: 10px;
+}
+
+.user-card {
+  margin: 10px 0px;
+  padding: 10px;
+  border: 1px solid black;
 }
