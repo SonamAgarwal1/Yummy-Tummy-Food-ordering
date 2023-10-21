@@ -6,7 +6,6 @@ import { useParams } from "react-router-dom";
 const ResturantMenu = () => {
   const [resInfo, setResInfo] = useState(null);
   const { resId } = useParams();
-  console.log(resId);
   useEffect(() => {
     fetchMenu();
   }, []);
