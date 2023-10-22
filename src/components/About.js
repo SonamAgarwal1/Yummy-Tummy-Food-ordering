@@ -3,7 +3,7 @@ import UserClass from "./UserClass";
 const About = () => {
   return (
     <>
-      <User />
+      <User name="Sonam Agarwal(Function)" />
       <UserClass />
     </>
   );
