@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       <User name="Sonam Agarwal(Function)" />
-      <UserClass />
+      <UserClass name="Sonam Agarwal(Class)" />
     </>
   );
 };
