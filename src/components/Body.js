@@ -21,10 +21,10 @@ const Body = () => {
     );
     const json = await data.json();
     setListOfResturants(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants //optional chaining
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants //optional chaining
     );
     setFilteredResList(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
 
@@ -72,7 +72,7 @@ const Body = () => {
       </div>
 
       <div className="res-container">
-        {filteredResList.map((resturant) => (
+        {filteredResList?.map((resturant) => (
           <Link
             to={"/resturants/" + resturant?.info?.id}
             key={resturant?.info?.id}
