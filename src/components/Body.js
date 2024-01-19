@@ -1,4 +1,4 @@
-import ResturantCard from "./ResturantCard";
+import ResturantCard, { withPromtedLabel } from "./ResturantCard";
 import { resList } from "../utils/mockData";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
@@ -10,6 +10,8 @@ const Body = () => {
   const [filteredResList, setFilteredResList] = useState([]);
   const [searchText, setSearchText] = useState("");
   const onlineStatus = useOnlineStatus();
+
+  const ResturantCardPromoted = withPromtedLabel(ResturantCard);
 
   useEffect(() => {
     fetchData();
@@ -25,6 +27,13 @@ const Body = () => {
     );
     setFilteredResList(
       json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+    console.log(
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+    console.log(
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants[1]?.info?.veg
     );
   };
 
@@ -80,7 +89,14 @@ const Body = () => {
             key={resturant?.info?.id}
             className="link-tag"
           >
-            <ResturantCard resObj={resturant} />
+            {/* If the resturant is vegetarian, promote it as vegetarain */}
+            {resturant?.info?.veg ? (
+              <ResturantCardPromoted resObj={resturant} />
+            ) : (
+              <ResturantCard resObj={resturant} />
+            )}
+            {/* {resturant?.info?.veg}
+            <ResturantCard resObj={resturant} /> */}
           </Link>
         ))}
       </div>

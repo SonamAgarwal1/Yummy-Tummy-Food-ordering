@@ -28,3 +28,18 @@ const ResturantCard = (props) => {
 };
 
 export default ResturantCard;
+
+//Higher Order Component
+
+export const withPromtedLabel = (ResturantCard) => {
+  return (props) => {
+    return (
+      <div>
+        <label className="absolute bg-green-800 text-white rounded-lg">
+          Pure veg
+        </label>
+        <ResturantCard {...props} />
+      </div>
+    );
+  };
+};
