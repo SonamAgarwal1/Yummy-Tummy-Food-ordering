@@ -23,11 +23,12 @@ const Body = () => {
     );
     const json = await data.json();
     setListOfResturants(
-      json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants //optional chaining
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants //optional chaining
     );
     setFilteredResList(
-      json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
+    console.log(json?.data);
   };
 
   if (onlineStatus === false)
