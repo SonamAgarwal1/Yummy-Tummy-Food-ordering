@@ -15,7 +15,6 @@ class UserClass extends React.Component {
   }
 
   render() {
-    console.log(this.state.userInfo);
     const { name, location, avatar_url } = this?.state?.userInfo; // destructuring props
     return (
       <div className="user-card">
