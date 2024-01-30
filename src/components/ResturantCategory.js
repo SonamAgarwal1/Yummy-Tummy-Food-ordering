@@ -3,7 +3,9 @@ const ResturantCategory = ({ data }) => {
   return (
     <div>
       <div className="w-6/12 bg-gray-100 mx-auto my-4 p-2 flex justify-between shadow-lg">
-        <span>{data?.title}</span>
+        <span className="font-bold text-base">
+          {data?.title} ({data?.itemCards?.length})
+        </span>
         <span>▼</span>
       </div>
     </div>

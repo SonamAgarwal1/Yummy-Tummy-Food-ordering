@@ -28,7 +28,6 @@ const Body = () => {
     setFilteredResList(
       json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
-    console.log(json?.data);
   };
 
   if (onlineStatus === false)
