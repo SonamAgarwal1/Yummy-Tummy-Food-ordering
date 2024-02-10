@@ -12,7 +12,7 @@ const Header = () => {
   console.log(cartItems);
 
   return (
-    <div className="flex justify-between bg-gray-50">
+    <div className="flex justify-between bg-gray-50 border-gray-200 border-b-2">
       <img className="w-20 h-20" alt="app-logo" src={LOGO_URL} />
       <div className="flex items-center">
         <ul className="flex m-4 p-4">
