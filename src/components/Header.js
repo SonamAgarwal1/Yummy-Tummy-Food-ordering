@@ -30,7 +30,7 @@ const Header = () => {
             <Link to="/grocery">Grocery</Link>
           </li>
           <li className="px-4">
-            🛒-{cartItems?.length > 0 && cartItems?.length}
+            <Link to="/cart"> 🛒-{cartItems?.length}</Link>
           </li>
           <button
             onClick={() => {
