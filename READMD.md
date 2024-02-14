@@ -23,4 +23,7 @@ _/
 -Configure babel
 -configure parcel config file to Disable default Babel transpilation
 -Jest configuration->npx jest --init
--Install JS dom librray
+-Install JSdom librray
+-Install @babel/preset-react - to make JSX work for test cases
+-Include @babel/preset-react in babel config
+-Install @testing-library/jest-dom for toBeInTheDocument
