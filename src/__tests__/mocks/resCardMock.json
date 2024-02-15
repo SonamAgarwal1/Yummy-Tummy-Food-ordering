@@ -1,0 +1,77 @@
+{
+  "info": {
+    "id": "64066",
+    "name": "NIC Ice Creams",
+    "cloudinaryImageId": "85825a6d74b1059a63a9b688de9f67ce",
+    "locality": "Maan Road",
+    "areaName": "Hinjawadi",
+    "costForTwo": "₹120 for two",
+    "cuisines": ["Ice Cream", "Desserts"],
+    "avgRating": 4.7,
+    "veg": true,
+    "parentId": "6249",
+    "avgRatingString": "4.7",
+    "totalRatingsString": "10K+",
+    "sla": {
+      "deliveryTime": 37,
+      "lastMileTravel": 4.8,
+      "serviceability": "SERVICEABLE",
+      "slaString": "35-40 mins",
+      "lastMileTravelString": "4.8 km",
+      "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+      "nextCloseTime": "2024-02-16 00:00:00",
+      "opened": true
+    },
+    "badges": {
+      "textExtendedBadges": [
+        {
+          "iconId": "guiltfree/GF_Logo_android_3x",
+          "shortDescription": "brand",
+          "fontColor": "#7E808C"
+        }
+      ]
+    },
+    "isOpen": true,
+    "type": "F",
+    "badgesV2": {
+      "entityBadges": {
+        "imageBased": {},
+        "textBased": {},
+        "textExtendedBadges": {
+          "badgeObject": [
+            {
+              "attributes": {
+                "description": "",
+                "fontColor": "#7E808C",
+                "iconId": "guiltfree/GF_Logo_android_3x",
+                "shortDescription": "brand"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "aggregatedDiscountInfoV3": {
+      "header": "ITEMS",
+      "subHeader": "AT ₹149"
+    },
+    "differentiatedUi": {
+      "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+      "differentiatedUiMediaDetails": {
+        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+        "lottie": {},
+        "video": {}
+      }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {}
+  },
+  "analytics": {},
+  "cta": {
+    "link": "https://www.swiggy.com/restaurants/nic-ice-creams-maan-road-hinjawadi-pune-64066",
+    "type": "WEBLINK"
+  }
+}
