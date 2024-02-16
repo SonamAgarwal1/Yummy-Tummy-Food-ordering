@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1708106109231" clover="3.2.0">
-  <project timestamp="1708106109232" name="All files">
-    <metrics statements="63" coveredstatements="55" conditionals="10" coveredconditionals="7" methods="26" coveredmethods="18" elements="99" coveredelements="80" complexity="0" loc="63" ncloc="63" packages="2" files="12" classes="12"/>
+<coverage generated="1708106441845" clover="3.2.0">
+  <project timestamp="1708106441845" name="All files">
+    <metrics statements="63" coveredstatements="58" conditionals="10" coveredconditionals="7" methods="26" coveredmethods="20" elements="99" coveredelements="85" complexity="0" loc="63" ncloc="63" packages="2" files="12" classes="12"/>
     <package name="components">
-      <metrics statements="46" coveredstatements="41" conditionals="10" coveredconditionals="7" methods="19" coveredmethods="16"/>
+      <metrics statements="46" coveredstatements="44" conditionals="10" coveredconditionals="7" methods="19" coveredmethods="18"/>
       <file name="Body.js" path="C:\Users\SONAM\Desktop\Yummy Tummy\src\components\Body.js">
-        <metrics statements="26" coveredstatements="21" conditionals="6" coveredconditionals="5" methods="10" coveredmethods="7"/>
+        <metrics statements="26" coveredstatements="24" conditionals="6" coveredconditionals="5" methods="10" coveredmethods="9"/>
         <line num="9" count="1" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="21" count="4" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="34" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="12" count="7" type="stmt"/>
+        <line num="13" count="7" type="stmt"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="34" count="7" type="cond" truecount="1" falsecount="1"/>
         <line num="35" count="0" type="stmt"/>
-        <line num="38" count="4" type="stmt"/>
-        <line num="40" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="7" type="stmt"/>
+        <line num="40" count="7" type="cond" truecount="2" falsecount="0"/>
         <line num="52" count="1" type="stmt"/>
         <line num="58" count="1" type="stmt"/>
         <line num="59" count="20" type="stmt"/>
         <line num="61" count="1" type="stmt"/>
-        <line num="69" count="0" type="stmt"/>
-        <line num="70" count="0" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="70" count="20" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
         <line num="83" count="0" type="stmt"/>
-        <line num="91" count="42" type="stmt"/>
+        <line num="91" count="80" type="stmt"/>
       </file>
       <file name="Contact.js" path="C:\Users\SONAM\Desktop\Yummy Tummy\src\components\Contact.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -51,17 +51,17 @@
       <file name="ResturantCard.js" path="C:\Users\SONAM\Desktop\Yummy Tummy\src\components\ResturantCard.js">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="3" count="2" type="stmt"/>
-        <line num="4" count="43" type="stmt"/>
-        <line num="12" count="43" type="stmt"/>
-        <line num="13" count="43" type="stmt"/>
+        <line num="4" count="81" type="stmt"/>
+        <line num="12" count="81" type="stmt"/>
+        <line num="13" count="81" type="stmt"/>
         <line num="37" count="2" type="stmt"/>
-        <line num="38" count="4" type="stmt"/>
-        <line num="39" count="14" type="stmt"/>
+        <line num="38" count="7" type="stmt"/>
+        <line num="39" count="27" type="stmt"/>
       </file>
       <file name="Shimmer.js" path="C:\Users\SONAM\Desktop\Yummy Tummy\src\components\Shimmer.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
       </file>
       <file name="sum.js" path="C:\Users\SONAM\Desktop\Yummy Tummy\src\components\sum.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -100,11 +100,11 @@
       <file name="useOnlineStatus.js" path="C:\Users\SONAM\Desktop\Yummy Tummy\src\utils\useOnlineStatus.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
         <line num="3" count="2" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="5" count="9" type="stmt"/>
-        <line num="6" count="5" type="stmt"/>
-        <line num="7" count="5" type="stmt"/>
-        <line num="10" count="9" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
       </file>
     </package>
   </project>

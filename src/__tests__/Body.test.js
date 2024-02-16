@@ -13,7 +13,7 @@ global.fetch = jest.fn(() => {
   });
 });
 
-it("Should render Body component with ", async () => {
+it("Should search res list for burger text input ", async () => {
   await act(async () => {
     render(
       <BrowserRouter>
@@ -31,4 +31,22 @@ it("Should render Body component with ", async () => {
   //Assertion
 
   expect(cardsAfterSearch?.length).toBe(2);
+});
+
+it("Should search res list for Top rated resturants ", async () => {
+  await act(async () => {
+    render(
+      <BrowserRouter>
+        <Body />
+      </BrowserRouter>
+    );
+  });
+  const cardsBeforeClick = screen.getAllByTestId("resCard");
+  expect(cardsBeforeClick?.length).toBe(20);
+  const topRatedBtn = screen.getByRole("button", {
+    name: "Top Rated Resturants",
+  });
+  fireEvent.click(topRatedBtn);
+  const cardsAfterClick = screen.getAllByTestId("resCard");
+  expect(cardsAfterClick?.length).toBe(16);
 });
