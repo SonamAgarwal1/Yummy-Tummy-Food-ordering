@@ -21,13 +21,14 @@ it("Should render Body component with ", async () => {
       </BrowserRouter>
     );
   });
-
+  const cardsBeforeSearch = screen.getAllByTestId("resCard");
+  expect(cardsBeforeSearch?.length).toBe(20);
   const searchBtn = screen.getByRole("button", { name: "Search" });
   const searchInput = screen.getByTestId("searchInput");
   fireEvent.change(searchInput, { target: { value: "burger" } });
   fireEvent.click(searchBtn);
-  const cards = screen.getAllByTestId("resCard");
+  const cardsAfterSearch = screen.getAllByTestId("resCard");
   //Assertion
 
-  expect(cards?.length).toBe(2);
+  expect(cardsAfterSearch?.length).toBe(2);
 });
