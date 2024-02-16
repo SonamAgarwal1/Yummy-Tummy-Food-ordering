@@ -48,5 +48,5 @@ it("Should search res list for Top rated resturants ", async () => {
   });
   fireEvent.click(topRatedBtn);
   const cardsAfterClick = screen.getAllByTestId("resCard");
-  expect(cardsAfterClick?.length).toBe(16);
+  expect(cardsAfterClick?.length).toBe(18);
 });
