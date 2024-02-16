@@ -11,7 +11,10 @@ const ResturantCard = (props) => {
     costForTwo,
   } = resObj?.info;
   return (
-    <div className="res-card m-4 p-4 w-[280px] rounded-lg bg-gray-100 hover:bg-gray-200">
+    <div
+      data-testid="resCard"
+      className="res-card m-4 p-4 w-[280px] rounded-lg bg-gray-100 hover:bg-gray-200"
+    >
       <img
         alt="food-img"
         className="food-img rounded-lg"
