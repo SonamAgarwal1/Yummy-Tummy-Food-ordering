@@ -7,6 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import appStore from "../utils/appStore";
 import Header from "../components/Header";
+import Cart from "../components/Cart";
 
 global.fetch = jest.fn(() => {
   return Promise.resolve({
@@ -23,6 +24,7 @@ it("Should load resturant Menu component", async () => {
         <Provider store={appStore}>
           <Header />
           <ResturantMenu />
+          <Cart />
         </Provider>
       </BrowserRouter>
     )
@@ -33,4 +35,17 @@ it("Should load resturant Menu component", async () => {
   const addBtns = screen.getAllByText("Add +");
   fireEvent.click(addBtns[0]);
   expect(screen.getByText("🛒-1")).toBeInTheDocument();
+  //Go to the cart place
+  fireEvent.click(screen.getByText("🛒-1"));
+  expect(screen.getAllByTestId("foodItems").length).toBe(21); //20 from Resturant Menu and 1 we just added
+
+  // Click on clear cart will reduce the foodItems by 1
+
+  fireEvent.click(screen.getByRole("button", { name: "Clear Cart 🗑️" }));
+  expect(screen.getAllByTestId("foodItems").length).toBe(20);
+  expect(
+    screen.getByText(
+      "Your cart is empty. Please add something delicious from the menu"
+    )
+  ).toBeInTheDocument();
 });
